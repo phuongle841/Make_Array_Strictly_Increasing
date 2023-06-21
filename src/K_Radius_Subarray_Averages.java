@@ -12,7 +12,6 @@ class K_Radius_Subarray_Averages {
         
         long[] prefixSum = new long[n + 1];
         for (int i = 0; i < n; ++i) {
-            System.out.print(prefixSum[i]+" ");
             prefixSum[i + 1] = prefixSum[i] + nums[i];
         }
         

@@ -13,9 +13,13 @@ public class App {
         int[] arr3 =  {7,4,3,9,1,8,5,2,6};
         K_Radius_Subarray_Averages k_Radius_Subarray_Averages = new K_Radius_Subarray_Averages();
         int[] resultOfK_Radius_Subarray_Averages = k_Radius_Subarray_Averages.getAverages(arr3, 3);
-        for (int i = 0; i < resultOfK_Radius_Subarray_Averages.length; i++) {
-            System.out.print(resultOfK_Radius_Subarray_Averages[i]+" ");
-        }        
-
+        // for (int i = 0; i < resultOfK_Radius_Subarray_Averages.length; i++) {
+        //     System.out.print(resultOfK_Radius_Subarray_Averages[i]+" ");
+        // }
+        
+        int[] arr4 ={1,3,5,2},arr5 ={2,3,1,14};
+        Minimum_Cost_to_Make_Array_Equal minimum_Cost_to_Make_Array_Equal = new Minimum_Cost_to_Make_Array_Equal();
+        long resultOfMinimum_Cost_to_Make_Array_Equal = minimum_Cost_to_Make_Array_Equal.minCost(arr4, arr5);
+        System.out.println(resultOfMinimum_Cost_to_Make_Array_Equal);
     }
 }
